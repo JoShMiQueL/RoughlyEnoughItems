@@ -68,6 +68,7 @@ public class PrimitivePlatformAdapterImpl implements PrimitivePlatformAdapter {
         try {
             v2 = SemanticVersion.parse(version2);
         } catch (VersionParsingException e) {
+            //Test
             new IllegalStateException("Failed to parse version: " + version2, e).printStackTrace();
             return 0;
         }
